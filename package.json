@@ -1,0 +1,13 @@
+{
+  "name": "@flatlooker/mapbox",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/flatlooker/mapbox",
+  "scripts": {
+    "start": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.77.0"
+  }
+}
