@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="./dist/index.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/gh/Flatlooker/Mapbox/dist/index.js"></script> -->
 </head>
 <body>
   <input type="text" id="key" placeholder="Mapbox Key" onchange="window.MAPBOX_KEY = event.target.value">
   <input type="text" id="mapbox" placeholder="Address">
   <script>
-    const input = document.querySelector('#mapbox')
-    mapbox.addMapboxListener(input, { types: ["place", "postcode", "locality"] })
+    const input = document.querySelector('#mapbox');
+    window.addMapboxListener = mapbox.addMapboxListener;
+    window.addMapboxListener(input, { types: ["place", "postcode", "locality"] });
   </script>
 </body>
 </html>
