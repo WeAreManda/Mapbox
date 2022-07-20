@@ -5,7 +5,6 @@ const REVERSE_GEOCODING_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places
 
 const geocodingParams = () => {
   const key = window.MAPBOX_KEY
-  console.log(key)
   return {
     access_token: key,
     types: PLACE_TYPES.join(","),
@@ -17,7 +16,6 @@ const geocodingParams = () => {
 };
 const reverseGeocodingParams = () => {
   const key = window.MAPBOX_KEY
-  console.log(key)
   return {
     access_token: key,
     types: PLACE_TYPES.join(","),
