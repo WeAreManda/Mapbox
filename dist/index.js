@@ -11,7 +11,6 @@
 
   const geocodingParams = () => {
     const key = window.MAPBOX_KEY;
-    console.log(key);
     return {
       access_token: key,
       types: PLACE_TYPES.join(","),
@@ -23,7 +22,6 @@
   };
   const reverseGeocodingParams = () => {
     const key = window.MAPBOX_KEY;
-    console.log(key);
     return {
       access_token: key,
       types: PLACE_TYPES.join(","),
